@@ -1,4 +1,4 @@
-package com.example.rest;
+package com.example.rest.user;
 
 import java.util.ArrayList;
 import java.util.Date;
