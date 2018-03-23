@@ -2,10 +2,15 @@ package com.example.rest.user;
 
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
 public class User {
 
 	Integer id;
+	@Size(min=2,message="Name Should have at least 2 characters")
 	String name;
+	@Past
 	Date dob;
 	
 	public User() {
